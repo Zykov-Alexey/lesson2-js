@@ -61,3 +61,25 @@ console.log(ageClassification(-1));
 console.log(ageClassification(2));
 console.log(ageClassification(24.1));
 console.log(ageClassification(55));
+
+//задача 7
+
+// function oddFn(n) {
+//   var arr = [];
+//   for (var i = 1; i<=n; i++) {
+//     if (i % 2 != 0) arr.push(i)}
+//   return arr;
+// }
+
+function oddFn(n) {
+  var ar = [];
+  var j = 1;
+  while (j <= n) {
+    ar.push(j);
+    j += 2;
+  }
+  return ar;
+}
+console.log(oddFn(10));
+console.log(oddFn(15));
+console.log(oddFn(20));
