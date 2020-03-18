@@ -83,3 +83,30 @@ function oddFn(n) {
 console.log(oddFn(10));
 console.log(oddFn(15));
 console.log(oddFn(20));
+
+//задача 8
+
+function mainFunc(a, b, func) {
+  if (typeof func === 'function') return func(a, b);
+  return false;
+}
+
+function cbRandom(a,b){
+  var x = Math.round(Math.random() * (b - a) + a);
+  return x;
+}
+
+function cbPow(a,b){
+  var c = Math.pow(a,b)  
+  return c;
+}
+
+function cbAdd(a,b) {
+  var v = a + b ;
+  return v;
+}
+console.log(mainFunc(2, 5, cbRandom));
+console.log(mainFunc(10, 30, cbRandom));
+console.log(mainFunc(2, 5, cbPow));
+console.log(mainFunc(2, 5, cbAdd)); 
+console.log(mainFunc(2, 5, 'not a func'));
