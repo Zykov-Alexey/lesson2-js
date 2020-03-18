@@ -44,3 +44,20 @@ console.log(weekFn(2));
 console.log(weekFn(5));
 console.log(weekFn(9));
 console.log(weekFn(1/8));
+
+//задача 6
+function ageClassification(n) {
+  var ageСlass = n < 0 ? null: 
+    n >= 0 && n <= 24 ? 'детский возраст' : 
+    n > 24 && n <= 44 ? 'молодой возраст' :
+    n > 44 && n <= 65 ? 'средний возраст' :
+    n > 65 && n <= 75 ? 'пожилой возраст' :
+    n > 75 && n <= 90 ? 'старческий возраст' :
+    n > 90 && n <= 122 ? 'долгожители' : null;
+    
+    return ageСlass;
+}
+console.log(ageClassification(-1));
+console.log(ageClassification(2));
+console.log(ageClassification(24.1));
+console.log(ageClassification(55));
